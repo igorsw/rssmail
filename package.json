@@ -1,0 +1,45 @@
+{
+  "name": "rssmail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=development jest",
+    "start": "cross-env NODE_ENV=production node ./main.js",
+    "start:dev": "cross-env NODE_ENV=development node ./main.js",
+    "start:pro": "npm start",
+    "start:watch": "nodemon cross-env NODE_ENV=development ./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorsw/rssmail.git"
+  },
+  "author": "igorsw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorsw/rssmail/issues"
+  },
+  "homepage": "https://github.com/igorsw/rssmail#readme",
+  "dependencies": {
+    "config": "^3.3.4",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "mjml": "^4.9.0",
+    "mongo-express": "^1.0.0-alpha.1",
+    "mongodb": "^3.6.4",
+    "rss-parser": "^3.12.0",
+    "supertest": "^6.1.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-vue": "^7.7.0",
+    "jest": "^26.6.3"
+  }
+}
